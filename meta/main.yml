@@ -3,9 +3,7 @@ galaxy_info:
   author: Ulf Troppens
   description: Ansible role to setup node for hpclab environment
 
-license: Apache-2.0
-
-min_ansible_version: 1.2
-
-galaxy_tags:
-  - hpclab
+  license: Apache-2.0
+  min_ansible_version: 1.2
+  galaxy_tags:
+    - hpclab
