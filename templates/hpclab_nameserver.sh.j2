@@ -1,0 +1,21 @@
+#!/bin/sh
+#
+# This script configures an additional nameserver
+
+# Check if "hpclab" is present
+grep hpclab /etc/resolv.conf >> /dev/null
+
+# Exit with rc=0 if "hpclab" found (no change required)
+if [ $? == 0 ]
+  then
+    exit 0
+fi
+
+# Update /etc/recolv.conf
+cat >> /etc/resolv.conf << EOF
+; nameserver for hpclab
+nameserver {{ hpclab_nameserver }}
+EOF
+
+# Exit with rc=1 to indicate change
+exit 1
