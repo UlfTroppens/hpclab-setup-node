@@ -2,3 +2,4 @@
 
 - include: configure-hostname.yml
 - include: configure-etchosts.yml
+- include: configure-nameserver.yml
