@@ -1,0 +1,5 @@
+## Default variables for role hpclab_setup_noe
+---
+
+## Domain name
+hpclab_domainname: hpclab.example

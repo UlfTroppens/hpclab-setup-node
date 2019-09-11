@@ -1,0 +1,6 @@
+# Configure hostname
+---
+
+- name: Configure hostname
+  hostname:
+    name: "{{ inventory_hostname_short }}.{{ hpclab_domainname }}"
