@@ -3,3 +3,6 @@
 
 ## Domain name
 hpclab_domainname: hpclab.example
+
+## Source file to be copied to /etc/hosts on target node
+hpclab_etchosts: /etc/hosts
