@@ -1,0 +1,19 @@
+# Configure additional nameserver
+---
+
+- name: Configure additional nameserver (add dhclient hook)
+  template:
+    src: hpclab_nameserver.sh.j2
+    dest: /etc/dhcp/dhclient-exit-hooks.d/hpclab_nameserver.sh
+    owner: root
+    group: root
+    mode: '0544'
+  when: hpclab_nameserver is defined
+
+
+- name: Configure additional nameserver (update resolv.conf)
+  command: /usr/sbin/dhclient-script
+  register: result
+  changed_when: result.rc == 1
+  failed_when: result.rc not in [0,1]
+  when: hpclab_nameserver is defined
