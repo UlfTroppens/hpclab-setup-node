@@ -1,2 +1,5 @@
 # hpclab-setup-node
-Configures node for use in hpclab environment
+Ansible role to setup node for hpclab environment
+
+The setup of a node includes:
+* Configuration of host name and domain name
