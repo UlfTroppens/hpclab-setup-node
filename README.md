@@ -2,4 +2,5 @@
 Ansible role to setup node for hpclab environment
 
 The setup of a node includes:
-* Configuration of host name and domain name
+* Configure host name and domain name
+* Configure /etc/hosts

@@ -1,0 +1,10 @@
+# Configure /etc/hosts
+---
+
+- name: Configure /etc/hosts
+  copy:
+    src: "{{ hpclab_etchosts }}"
+    dest: /etc/hosts
+    owner: root
+    group: root
+    mode: '0644'
