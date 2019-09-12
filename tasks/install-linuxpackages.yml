@@ -1,0 +1,6 @@
+---
+
+- name: Install essential Linux packages
+  package:
+    name: "{{ hpclab_linuxpackages }}"
+    state: present

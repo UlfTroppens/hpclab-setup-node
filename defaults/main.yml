@@ -9,3 +9,9 @@ hpclab_etchosts: /etc/hosts
 
 ## Additional name server (optional)
 #hpclab_nameserver: 1.2.3.4
+
+## Essential Linux packages
+hpclab_linuxpackages:
+  - java-1.8.0-openjdk
+  - tree
+  - vim
