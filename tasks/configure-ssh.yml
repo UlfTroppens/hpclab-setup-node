@@ -1,0 +1,9 @@
+# Configure ssh
+---
+
+- name: Disable ssh strict host key checking
+  blockinfile:
+    path: /etc/ssh/ssh_config
+    block: |
+      # Disable strict host key checking
+      StrictHostKeyChecking no
