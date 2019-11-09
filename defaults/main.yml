@@ -12,6 +12,7 @@ hpclab_etchosts: /etc/hosts
 
 ## Essential Linux packages
 hpclab_linuxpackages:
+  - git
   - java-1.8.0-openjdk
   - tree
   - vim
